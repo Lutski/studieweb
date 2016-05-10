@@ -34,7 +34,26 @@ body {
     line-height: 1.58;
     font-size: 18px;
     font-weight: 100; }
+  #main .image-wrapper {
+    margin: 40px auto 40px auto;
+    display: block;
+    padding: 0px;
+    position: relative;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: zoom-in;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+    #main .image-wrapper img {
+      width: 100%;
+      height: auto; }
 
+@media(max-width: 1025px) {
+  #main .image-wrapper {
+    width: 100%; } }
 @media(max-width: 769px) {
   #main h1 {
     font-size: 28px; }
@@ -43,4 +62,11 @@ body {
   #main h3 {
     font-size: 20px; }
   #main p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  #main .image-wrapper {
+    width: 100vw; } }
+.show-image {
+  width: 100vw !important;
+  margin-bottom: auto !important;
+  margin-top: -25% !important;
+  cursor: zoom-out !important; }

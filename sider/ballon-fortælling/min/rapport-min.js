@@ -1,0 +1,1 @@
+function clickImage(){$(".image-wrapper").click(function(){imageIsZoomed===!1?($(this).addClass("show-image"),imageIsZoomed=!0):($(this).removeClass("show-image"),imageIsZoomed=!1)})}$(document).ready(function(){clickImage()});var imageIsZoomed=!1;

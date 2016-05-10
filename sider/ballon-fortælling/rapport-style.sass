@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700)
 
+@mixin transition_form($transition_time)
+  transition: all $transition_time ease-in-out
+  -webkit-transition: all $transition_time ease-in-out
+  -moz-transition: all $transition_time ease-in-out
+  -o-transition: all $transition_time ease-in-out
+
 body
   background: white
   font-family: 'Open Sans', sans-serif
@@ -46,7 +52,28 @@ body
       size: 18px
       weight: 100
 
+  .image-wrapper
+    margin: 40px auto 40px auto
+    display: block
+    padding: 0px
+    position: relative
+    width: 120%
+    left: 50%
+    transform: translate(-50%)
+    cursor: zoom-in
+    @include transition_form(0.3s)
 
+
+    img
+      width: 100%
+      height: auto
+
+
+
+@media(max-width: 1025px)
+  #main
+    .image-wrapper
+      width: 100%
 
 @media(max-width: 769px)
   #main
@@ -61,3 +88,18 @@ body
 
     p
       font-size: 16px
+
+    .image-wrapper
+      width: 100vw
+
+
+
+
+
+
+
+.show-image
+  width: 100vw !important
+  margin-bottom: auto !important
+  margin-top: -25% !important
+  cursor: zoom-out !important
