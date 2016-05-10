@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digitale billeder: Anden øvelse - filstørrelser</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<a href="../../index.html">Tilbage</a>
+
+
+<h1>Anden øvelse - beregning af filstørrelser
+</h1>
+
+
+<p><b>Hvad er en bit og hvad er en byte</b><br>
+En bit er den mindste regneenhed i en computer og den har enten værdien et eller nul. En byte er defineret som 8 bit.
+En kombination af otte ettaller og nuller, f.eks. 01100001 som der betyder ”a”, bliver kaldt binær kode</p>
+
+
+<p><b>Hvad er en pixel</b><br>
+Et bilede består af en masse små pixels, som man kan se hvis man zoomer meget ind på et billede eller hvis opløsningen i billedet er lav. Opløsningen viser hvor mange pixels der er i et billede, f.eks. ville en opløsning på 100x100 havde 10.000 pixels.
+<br><br>
+Hver pixel på en skærm, består af 3 farver rød, grøn og blå. Bedre kendt som RGB (Red Green Blue). Dette giver dig muligheden for at kombinere de 3 farver på flere millioner forskellige måder. Så dvs. at hver pixels der bliver vist på et billede er en blanding af de 3 farver.
+<br><br>
+3 bytes er tildelt for at specificere en pixels farve, dvs. at der er tildelt en byte til hver af de hovedsagelige farve komponenter, altså Rød, Grøn og Blå.</p>
+
+
+
+<img src="digitale-img/anden/db-a-1.jpg">
+
+
+<p>Dette er et billede af hvordan en masse pixels ser ud, når man har 
+zoomet helt ind på dem. Som man kan se er der en rød, grøn og blå farve ved hver pixel. 
+</p>
+
+
+<p><b>Hvordan gemmer man et billede som en .BMP fil</b><br>
+Hvis man starter med at starte Adobe Photoshop op og derefter åbner  ”prøvebilledet” op inde i Photoshop, derefter klikker man ”Gem som” og gemmer billedet som en .BMP fil.</p>
+
+<p><b>Udregning af filstørrelse</b><br>
+Billedets størrelse er 768 × 576, hvis man så ganger de to numre for man 442.368 og det er billedets opløsning. Derefter ganger man det med 3 fordi at hver pixel fylder 3 bytes. Hvis man ganger tallene sammen kommer det til at give 1.327.104 </p>
+
+<p><b>Check om min udregning  er rigtig</b><br>
+Hvis jeg går ind under billedets egenskaber kan jeg se at billedet fylder 1.351.568 bytes (efter jeg har eksporteret det for Adobe Photoshop ).</p>
+
+
+
+<img src="digitale-img/anden/db-a-2.png">
+
+
+
+
+
+<p>Det jeg havde udregnet var 1.327.104 bytes. Hvilket vil sige at der er 24.464 bytes mellem min beregning og det computeren siger at filen fylder, Hvordan kan det mon være?</p>
+
+<p><b>Hvad bliver de sidste bytes brugt til?</b><br>
+Her er et billede som der viser præcist hvad de sidste bytes bliver brugt til: <a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/BMPfileFormat.png">https://upload.wikimedia.org/wikipedia/commons/c/c4/BMPfileFormat.png</a>.
+Nogle af de ting, de sidste bytes går til er f.eks. at finde ud af fil størrelsen, finde ud af hvor stort og bredt billedet er og mange andre informationer man kan se hvis man klikker på linket.
+Disse informationer bliver kaldt metadata.
+metadata betyder ”data om data”.
+Dvs. at det er noget data der viser informationer om noget data.</p>
+
+
+
+<p><b>Hvor lang til det vil tage at overføre billedet med en downloadhastighed på 1 kilobit/s</b><br>
+
+Jeg starter med at finde ud af hvor hurtig downloadhastigheden er i bytes/s. det gør jeg ved at sige 1024 / 8, fordi at 1 kilobit = 1024 bit og 1 byte = 8 bit, så jeg dividerer bare tallene sammen for at finde ud af downloadhastigheden i byte. Det giver 128 byte/s.
+<br><br>
+Derefter tager jeg filstørrelsen på vores billede hvilket er 1.351.568 bytes og dividerer med 128, som er det antal bytes man kan downloade per sekund med 1 kilobit/s. downloadhastighed.
+Hvis man dividerer tallene giver det 10.559,125 og det er så antallet af sekunder det tager at downloade filen.
+<br><br>
+Hvis man vil finde ud af hvor lang tid det tager i minutter og timer dividere man 10.559,125 med 60 for at få det i minutter, det giver 175,98541667, derefter dividere man 175,98541667 med 60 igen for at få det i timer, og det kommer til at give 2,9330902778 som jeg runder ned til 2,9 timer og så siger jeg 2 timer + (0,9 / 100) * 60 og det giver 2,54 hvilket vil sige at det tager 2 timer og 54 minutter at downloade en fil på 1.351.568 bytes med en downloadhastighed på 1 kilobit/s.</p>
+
+</body>
+</html>

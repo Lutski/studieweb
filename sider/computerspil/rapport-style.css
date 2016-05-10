@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.whitespace {
+  height: 2000px;
+}
+
+.intro {
+  text-align: center;
+  border: 2px solid #5e5e5f;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro .text_wrapper p {
+  margin: 2px 0px 2px 0px;
+}
+
+.opgave {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.opgave h1, .opgave h2, .opgave h3, .opgave h4, .opgave h5 {
+  margin: 0;
+  font-weight: 700;
+}
+.opgave h1 {
+  text-align: center;
+  padding-top: 50px
+}
+.opgave h2 {
+  padding-top: 20px
+}
+
+.first-after {
+  padding-top: 0px !important
+}
+
+.opgave .image-wrapper {
+  margin: 40px auto 40px auto;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+}
+.opgave .image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.opgave h1, .opgave h2, .opgave h3 {
+  margin-top: 20px;
+}
+.opgave hr {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+.opgave p {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+nav {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -60px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 60px;
+}
+nav .content {
+  display: none;
+}
+
+.menu-btn {
+  position: fixed;
+  background-color: #E53A40;
+  color: white;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 1px 1px 4px #888888;
+  outline: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu-btn .nav-toggle {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu-btn .nav-toggle span,
+.menu-btn .nav-toggle span:before,
+.menu-btn .nav-toggle span:after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn .nav-toggle span:before {
+  top: -10px;
+}
+.menu-btn .nav-toggle span:after {
+  top: 8px;
+}
+.menu-btn.is-open span {
+  background: transparent;
+}
+.menu-btn.is-open span:before, .menu-btn.is-open span:after {
+  transform-origin: center;
+  top: 0;
+}
+.menu-btn.is-open span:before {
+  transform: rotate(45deg);
+  top: 2px;
+}
+.menu-btn.is-open span:after {
+  transform: rotate(-45deg);
+}
+
+.bg-overlay {
+  background: #F2F3F4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.8;
+  display: none;
+}
+
+.overlay {
+  background: #ffffff;
+  bottom: 130px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+.overlay .content {
+  margin-top: -10px;
+}
+.overlay .content .triangle {
+  width: 0;
+  position: absolute;
+  color: #f0f5f9;
+  bottom: -20px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  left: 50%;
+  transform: translate(-50%);
+}
+.overlay .content h1 {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.overlay .content h2 {
+  cursor: pointer;
+  font-weight: 300;
+}
+.overlay .content hr {
+  margin: 0px auto 0px auto;
+  width: 60%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+.overlay .content .indhold {
+  max-width: 400px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.overlay .content .indhold h2 a {
+    color: black
+}
+
+.overlay .content .indhold ul {
+  padding: 0;
+  font-size: 14px;
+}
+.overlay .content .indhold ul li {
+  list-style: none;
+  font-weight: bold;
+}
+.overlay .content .indhold ul li a {
+  color: black;
+}
+.overlay .content .indhold ul .under li {
+  font-weight: normal;
+  padding-left: 30px;
+}

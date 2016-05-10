@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludvig</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>Om mig</h1>
+<p>jeg hedder Ludvig, jeg går i 1.Gamma på HTX i Roskilde.<br>
+Denne her hjemmeside skal være min portfolio side på HTX. Det er her jeg skal lægge de dokumentationer ud som jeg laver i Kom/IT. </p>
+
+<nav>
+	<h3>Dokumentationer fra Kom/IT</h3>
+
+	<h4>Digitale billeder</h4>
+	<ul>
+		<li><a href="sider/digitale-billeder/db-første.html">Første øvelse - Redigering</a></li>
+		<li><a href="sider/digitale-billeder/db-anden.html">Anden øvelse - filstørrelser</a></li>
+		<li><a href="sider/digitale-billeder/db-tredje.html">Tredje øvelse - komprimering</a></li>
+		<li><a href="sider/digitale-billeder/db-fjerde.html">Fjerde øvelse - Vektorgrafik</a></li>
+	</ul>
+
+	<h4>Grafisk Design</h4>
+		<ul>
+			<li><a href="sider/grafisk-design/gf-dokumentation.html">Grafisk design dokumentation</a></li>
+		</ul>
+</nav>
+
+</body>
+</html>
