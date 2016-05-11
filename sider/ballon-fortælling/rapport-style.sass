@@ -18,6 +18,9 @@ body
   left: 50%
   transform: translate(-50%)
 
+  .space
+    height: 1000px
+
   h1
     text-align: center
     margin: 0
@@ -52,21 +55,21 @@ body
       size: 18px
       weight: 100
 
-  .image-wrapper
-    margin: 40px auto 40px auto
-    display: block
-    padding: 0px
-    position: relative
-    width: 120%
-    left: 50%
-    transform: translate(-50%)
-    cursor: zoom-in
-    @include transition_form(0.3s)
+  .image
+    .image-wrapper
+      margin: 40px auto 40px auto
+      display: block
+      padding: 0px
+      position: relative
+      width: 120%
+      left: 50%
+      transform: translate(-50%)
+      cursor: zoom-in
+      @include transition_form(0.3s)
 
-
-    img
-      width: 100%
-      height: auto
+      img
+        width: 100%
+        height: auto
 
 
 
@@ -103,3 +106,19 @@ body
   margin-bottom: auto !important
   margin-top: -25% !important
   cursor: zoom-out !important
+  
+//
+// .image-wrapper
+//   margin: 40px auto 40px auto
+//   display: block
+//   padding: 0px
+//   position: relative
+//   width: 120%
+//   left: 50%
+//   transform: translate(-50%)
+//   cursor: zoom-in
+//   @include transition_form(0.3s)
+//
+//   img
+//     width: 100%
+//     height: auto
