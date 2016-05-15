@@ -20,6 +20,9 @@ body
 .space-divider
   height: 50px
 
+.is-gone
+  display: none
+
 #main
   width: 90%
   max-width: 700px
@@ -44,6 +47,20 @@ body
     width: 80%
     border: none
     margin-bottom: 30px
+
+  .coderize, .stringerize
+    background: #eef
+    border: 1px solid #e8e8e8
+    border-radius: 3px
+    padding: 2px
+    font-size: 16px
+    letter-spacing: .7px
+  .coderize
+    color: #C678DD
+
+  .stringerize
+    color: #98C379
+
 
   h2
     margin: 0
@@ -80,6 +97,31 @@ body
         width: 1em
         margin-left: -1em
 
+  .comment
+    text-align: center
+    margin-top: 50px
+
+    p
+      color: #8b8687
+      font:
+        size: 16px
+        weight: 200
+
+  .sass-css
+    .buttons
+      text-align: center
+      .sass-btn, .css-btn
+        border: none
+        padding: 0
+        margin: 10px 10px 0px 10px
+        background: white
+        outline: none
+        cursor: pointer
+        font:
+          size: 20px
+
+      .sass-css-btn-is-on
+        border-bottom: 1px solid black
 
   .image
     .image-wrapper
@@ -123,6 +165,9 @@ body
 
     ul
       margin-left: 0px
+
+    .comment p
+      font-size: 14px
 
 
 

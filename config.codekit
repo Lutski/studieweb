@@ -32,6 +32,17 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/sider\/ballon-fortælling\/billeder\/error-screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.8152e+06,
+		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/error-screenshot.png",
+		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/error-screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/sider\/ballon-fortælling\/min\/rapport-min.js": {
 		"fileType": 64,
 		"ignore": 1,

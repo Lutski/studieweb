@@ -45,9 +45,10 @@
           <li>Hjemmesiden skal være brugervenlig</li>
           <li>Hjemmesiden skal være nem at navigere</li>
           <li>Hjemmesiden skal være lærerig</li>
+          <li>Hjemmesiden skal være så personlig som muligt</li>
         </ul>
 
-      <h3>User stories for eleverne</h3>
+      <h3>User stories for brugerne</h3>
         <ul>
           <li>Som en bruger der er interesseret i ballonens historie vil jeg kunne navigere og anvende produktet uden en introduktion til hvordan gør det.</li>
           <li>Som en bruger der er interesseret i ballonens historie vil jeg kunne lære en del om emnet ved at læse på hjemmesiden.</li>
@@ -61,7 +62,7 @@
       <p>Formålet med er som sagt tidligere i rapporten at lære mennesker i alle aldersgrupper at lære om ballonens historie og hvad man bruger den til i dag, via et nemt og meget læseligt format, dette vil hjælpe læseren med at lære, samt forstærke den overordnet UX (User Experience).</p>
 
 
-      <h2>Valg af vores værktøjer</h2>
+      <h2>Valg af værktøjer</h2>
       <p>Gennem udviklingen af hjemmesiden har jeg benyttet mig af nogle forskellige værktøjer, her er de alle sammen beskrevet en efter en.</p>
 
       <h3>Sketch</h3>
@@ -70,34 +71,67 @@
 
     </div>
 
+  <div class="overordnet-design">
+    <h1>Overordnet design</h1>
+    <hr class="seperator">
+
+    <h2>Hvordan kom jeg frem til designet?</h2>
+    <p>Designet er blevet udarbejdet gennem flere processer, jeg startede med at generere ideer til designet. Jeg startede med at skrive user stories, så jeg havde en klar ide om hvad der skulle være på hjemmesiden (user stories(LINK)). Herefter begyndte jeg på designet af hjemmesiden, der bruger jeg altid papir og blyant for at lave ‘wireframes’ der giver mig en klarere ide om hvad jeg skal lave når jeg designer hjemmesiden i <a href="https://sketchapp.com/">Sketch</a>. Her er de wireframes jeg lavede:</p>
+
+
+
+    <p>Nu hvor jeg har en klar ide om hvordan jeg vil have hjemmesiden til at se ud, begynder jeg på at designe siden i <a href="https://sketchapp.com/">Sketch</a>, dette kan se herunder:</p>
+
+    <p>Jeg skrev også selve teksten på hjemmesiden, selvom dette ikke er den visuelle del af designet, er teksten stadig en essentiel del af det overordnet design. Herunder kan du se en pdf version af teksten der ligger inde på mit <a href="http://lutski.github.io/ballon-fort-lling-KomIt/">produkt</a>:</p>
+
+    <p>PDF DOWNLOADER/VIEWER (LINK)</p>
+  </div>
+
+
+
+
+
     <h1>Iterationer af systemudviklings aktiviteterne</h1>
     <hr class="seperator">
 
-    <h2>Iteration 1 - <i>lille titel</i></h2>
+    <p>Da der er rigtigt mange dele inde i hjemmesiden jeg kunne dokumentere, har jeg udvalgt 3 specifikke dele af projektet som jeg har valgt at dokumenterer.</p>
+
+    <h2>Iteration 1 - <i>Personliggør siden med jQuery og Javascript</i></h2>
     <h3>Hvad er det?</h3>
-    <p>…</p>
+    <p>En af ideerne bag siden var at jeg ville havde siden til at “tale” med brugeren, så jeg blev nødt til at give brugeren en mulighed for at give sit navn og teksten vil ændrer sig baseret på det brugeren skriver.</p>
 
     <h3>Hvorfor er det vigtigt?</h3>
-    <p>…</p>
+    <p>Dette er meget vigtigt hvis jeg ville opfylde det krav at føre min hjemmeside/produkt mere personligt.</p>
 
     <h3>Planlægning</h3>
-    <p>…</p>
+    <p>I denne iteration vil jeg fokusere på kravet (LINK): “Hjemmesiden skal være så personlig som muligt”.</p>
 
     <h3>Kontrol af krav og testprocedurer</h3>
     <p>…</p>
 
     <h3>Design</h3>
-    <p>…</p>
+    <p>Der foregik ikke noget design, under denne iteration. Men jeg tænkte over hvordan jeg ville udføre denne opgave i en <span class="coderize">function</span>. Jeg eksperimenterede også med forskellige versioner af hvordan jeg ville havde det til at virke.</p>
 
     <h3>Implementering</h3>
-    <p>…</p>
+    <p>Efter nogle eksperimenter endte jeg med at skrive denne her function:</p>
+
+    <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">getNameInput</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.input-name'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'keyup'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">user_input_name</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">".input-name"</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.user_name'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">user_input_name</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span></code></pre></figure>
+
+    <p>Dette er en funktion som jeg har kaldt for <span class="coderize">getNameInput()</span>. I funktionens første linje anvender jeg en jQuery funktion der hedder <span class="coderize">on</span>, som jeg giver parametrene <span class="stringerize">'keyup'</span> og en <span class="coderize">function()</span>. Alt dette betyder er at hver gang jeg klikker ned på en tast og tasten går op, kører den alt koden inde i den funktion som jeg skriver i det andet parameter. Inde i funktionen jeg giver som andet parameter sker der to ting. Først laver jeg en variabel der hedder <span class="coderize">user_input_name</span>, denne variable tager teksten fra input feltet, som der har en class: <span class="stringerize">".input-name"</span> og tager alt tekst der er inde i den, med funktionen <span class="coderize">val()</span>. Herefter sætter jeg alle HTML elementer med en class: <span class="stringerize">".user_name"</span> til den værdi jeg lige har udvundet fra <span class="coderize">user_input_name</span></p>
+    <br>
+    <p>Det vil sige at hver gang brugeren skriver noget tekst (Forhåbentligt deres navn) i tekst input feltet, bliver den skrevne tekst automatisk opdateret på siden.</p>
 
     <h3>Test</h3>
     <p>…</p>
 
     <div class="space-divider"></div>
 
-    <h2>Iteration 2 - <i>lille titel</i></h2>
+    <h2>Iteration 2 - <i>Guide brugeren på det rigtige spor</i></h2>
     <h3>Hvad er det?</h3>
     <p>…</p>
 
@@ -114,7 +148,144 @@
     <p>…</p>
 
     <h3>Implementering</h3>
-    <p>…</p>
+    <p>Det første jeg startede med var at kode/style selve error beskeden udelukkende med HTML og Sass (LINK), for så senere at tilføje den Javascript og jQuery funktionalitet jeg ville have. herunder kan man se HTML’en og derefter kommer den Sass jeg skrev og en oversættelse til CSS:</p>
+
+    <div class="comment no-margin">
+      <p>Her kan man se HTML'en til min error besked:</p>
+    </div>
+
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"error-message"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Vær venlig at skrive dit navn :)<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+    <div class="comment">
+      <p>Her kan man se Sass'en og CSS'en til min error besked:</p>
+    </div>
+    <div class="sass-css">
+      <div class="buttons">
+        <button class="sass-btn sass-css-btn-is-on">Sass</button>
+        <button class="css-btn">CSS</button>
+      </div>
+      <div class="sass">
+        <figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nn">#header</span>
+  <span class="nc">.error-message</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">70px</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="mh">#F36B6B</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">3</span>
+
+    <span class="nt">h1</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">white</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span>
+      <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span>
+      <span class="nl">transform</span><span class="p">:</span> <span class="nf">translateY</span><span class="p">(</span><span class="m">-50%</span><span class="p">)</span></code></pre></figure>
+      </div>
+      <div class="css is-gone">
+        <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#header</span> <span class="nc">.error-message</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">70px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#F36B6B</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#header</span> <span class="nc">.error-message</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">-50%</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    </div>
+
+    <p>Lige nu bliver notifikationen vist på siden men uden nogen effekt, den forsvinder ikke og den kommer heller ikke frem når den skal. Lige nu er den der bare, ligesom vist på billedet herunder:</p>
+
+    <div class="image">
+      <div class="image-wrapper">
+        <img src="billeder/error-screenshot.png" alt="Der burde være et billede her ¯\_(ツ)_/¯">
+      </div>
+    </div>
+
+    <p>Jeg vil godt gøre error beskederne til en slags historie, derfor er der mere Javascript end behøvede for at gøre historien bedre. Her er alt den Javascript jeg bruger:</p>
+
+    <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Controls which error messages get sent</span>
+<span class="kd">function</span> <span class="nx">startStory</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">buttonClickCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".start-btn"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">$</span><span class="p">(</span><span class="s2">".input-name"</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">buttonClickCount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">firstError</span><span class="p">();</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">buttonClickCount</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">){</span>
+        <span class="nx">lastError</span><span class="p">();</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">nameError</span><span class="p">(</span><span class="nx">buttonClickCount</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">enableScrolling</span><span class="p">();</span>
+      <span class="nx">scrollDown</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="nx">buttonClickCount</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">// All name error functions</span>
+<span class="kd">function</span> <span class="nx">nameError</span><span class="p">(</span><span class="nx">errorNumber</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">errorArray</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"SKRIV DIT NAVN G!"</span><span class="p">,</span> <span class="s2">"VIL DU SLÅS? SKRIV DET NAVN"</span><span class="p">,</span> <span class="s2">"JEG KALDER PÅ MINE SHABABS! SKRIV DET NAVN!"</span><span class="p">,</span> <span class="s2">"WALLAH, JEG GIVER DIG EN SEKUND TIL AT SKRIVE DIT NAVN"</span><span class="p">,</span> <span class="s2">"PAS PÅ G, JEG HAR DRENGE PÅ GADEN! SKRIV DET NAVN"</span><span class="p">,</span> <span class="s2">"DU VED IKKE HVAD JEG ER I STAND TIL! SKRIV NAVNET"</span><span class="p">,</span> <span class="s2">"JEG LEGER IKKE... SKRIV DIT NAVN"</span><span class="p">];</span>
+  <span class="c1">//var errorArray = ["Skriv dit navn når jeg siger det!", "Stop med at klikke på knappen uden at skrive dit navn... Det gør ondt!", "AVV! Skriv dog dit navn...", "Okay... Sidste chance ellers sagsøger jeg dig!"]</span>
+  <span class="c1">//var randomNumber = Math.floor((Math.random() * errorArray.length) + 1);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message h1"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">errorArray</span><span class="p">[</span><span class="nx">errorNumber</span><span class="p">]);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">firstError</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message h1"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"Vær venlig at skrive dit navn :)"</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">lastError</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message h1"</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">"RESPEKT... SINDSYG UUDHOLDENHED, BARE KOM!"</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s2">"background"</span> <span class="p">:</span> <span class="s2">"#84D270"</span><span class="p">});</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".error-message"</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+  <span class="nx">enableScrolling</span><span class="p">();</span>
+  <span class="nx">scrollDown</span><span class="p">();</span>
+<span class="p">}</span></code></pre></figure>
+
+
+    <p><span class="coderize">startStory()</span>: Denne funktion bliver brugt til at styre hvornår alle de andre funktioner skal blive kaldt, udfra hvor mange gange brugeren har trykket på knappen, uden at angive sit navn.</p>
+    <br>
+    <p><span class="coderize">nameError(errorNumber)</span>: Denne funktion viser en bestemt sætning taget fra en <span class="coderize">array</span> baseret på hvilket nummer den for som parameter (dette nummer bliver sat i <span class="coderize">startStory()</span>). Den viser også beskeden, ved hjælp af <span class="coderize">fadeIn()</span>, <span class="coderize">delay()</span> og <span class="coderize">fadeOut()</span>.</p>
+    <br>
+    <p><span class="coderize">firstError()</span>: Denne funktion viser den første 'venlige' error besked, samt fader den ind og ud.</p>
+    <br>
+    <p><span class="coderize">lastError()</span>: Denne funktion modsat den <span class="coderize">firstError()</span> viser den sidste error besked. Udover dette fader den også beskeden ud og ind, samt giver den beskeden en ny farve.</p>
+    <br>
+    <p>Tilsidst kalder jeg alle funktionerne når hjemmesiden er blevet loadet:</p>
+
+    <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Functions I call when the page initially loads</span>
+  <span class="nx">disableScrolling</span><span class="p">();</span>
+  <span class="nx">getNameInput</span><span class="p">();</span>
+  <span class="nx">startStory</span><span class="p">();</span>
+  <span class="nx">makeVideoFixed</span><span class="p">();</span>
+  <span class="nx">togglePopup</span><span class="p">();</span>
+  <span class="nx">makeHistoryTextFixed</span><span class="p">();</span>
+<span class="p">});</span></code></pre></figure>
+
+    <p>Som man kan se har jeg mange andre funktioner som bliver kaldt, de kan alle ses inde på Github(LINK) eller du kan downloade projekt filerne her(LINK).</p>
+
 
     <h3>Test</h3>
     <p>…</p>
