@@ -17,7 +17,7 @@
       <p>Formålet med projektet var at udvikle et kommunikationsprodukt som formidler information, om luftballoner.</p>
 
       <h2>Problemstilling</h2>
-      <p>Jeg vil hjælpe mennesker i alle aldre, at lære om ballonens historie samt hvad den bliver brugt til i dag.</p>
+      <p>Jeg vil hjælpe mennesker i alle aldre, at lære om ballonens historie samt hvad den bliver brugt til i dag, i et nemt og brugervenligt miljø.</p>
 
       <h2>Målgruppe definition</h2>
       <p>Målgruppen for mit produkt er for folk i alle aldersgrupper der er interesserede i at lære mere om luftballoner. Hvis de vil lære om ballonens historie, hvad den bliver brugt til i dag mm. vil siden være perfekt for dem, alt de skal kunne er at læse dansk.</p>
@@ -40,7 +40,7 @@
       <h3>Formålet med effekten</h3>
       <p>Effekten af dette produkt er at lære nysgerrige folk mere om ballonens historie.</p>
 
-      <h3>Krav til vores spil</h3>
+      <h3>Krav til hjemmesiden</h3>
         <ul>
           <li>Hjemmesiden skal være brugervenlig</li>
           <li>Hjemmesiden skal være nem at navigere</li>
@@ -66,9 +66,32 @@
       <p>Gennem udviklingen af hjemmesiden har jeg benyttet mig af nogle forskellige værktøjer, her er de alle sammen beskrevet en efter en.</p>
 
       <h3>Sketch</h3>
-      <p>Sketch er det værktøj jeg brugte til at designe hjemmesiden. Sketch er et design program, som er optimeret til design af hjemmesider, mobile applikation mm.</p>
+      <p>Sketch er det værktøj jeg brugte til at designe hjemmesiden. Sketch er et design program, som er optimeret til design af hjemmesider, mobile applikationer mm.</p>
+
+      <h3>Atom</h3>
+      <p>Atom er en gratis text-editor, udviklet af Github. Dette program brugte jeg til at lave selve hjemmesiden, altså her skrev jeg alt koden.</p>
+
+      <h3>iTerm</h3>
+      <p>iTerm er også et gratis program jeg bruger i stedet for den standarde terminal applikation, det gør jeg fordi at iTerm har en smule flere features.</p>
+
+      <h3>Sass</h3>
+      <p>Sass står for Syntactically Awesome Style Sheets. Det er det samme som CSS, men det har mange flere features, det er nemmere at læse og man kan neste sine stylesheets (Dvs. at man har classes, tags, ID’s osv. under hinanden i sit stylesheet). For at bruge sass bliver det konverteret til CSS siden at browseren ikke læser Sass, men kun læser CSS. Dette bliver forklaret i sektionen om Jekyll herunder.</p>
+
+      <h3>Jekyll</h3>
+      <p>Jekyll bliver normalt brugt til at blogge på, via markdown. Men hvis man udnytter det rigtigt, kan det blive rigtigt godt anvendt til web udvikling. Jeg brugte jekyll af to årsager. Første årsag er at det kan konvertere min Sass (Syntactically Awesome Style Sheets) til CSS (Cascading Style Sheets). Den anden grund er at Github kan hoste ens side gratis, hvis man bruger jekyll og har et Github repository på Github. Dette gør Github fordi de selv anvender Jekyll, til deres dokumentation (Github Pages).</p>
+
+      <h3>HTML, CSS, Javascript og jQuery</h3>
+      <p>Under udviklingen af hjemmesiden brugte jeg selvfølgelig HTML (Hyper Text Markup Language), til at lave mit markup på siden. Angående min CSS konverterede jeg Sass til CSS, som jeg har skrevet om i tidligere sektioner. Javascript og jQuery hænger sammen en smule, siden at jQuery er et utroligt populært Javascript Library (bibliotek). jeg bruger Javascript og biblioteket jQuery til at gøre min side interaktiv, samt at give min side logik som ikke er muligt i CSS eller HTML.</p>
 
 
+      <h2>Tidsplan (ressourceplan)</h2>
+      <p>For at dele hele projektet op i mindre bidder, som var nemmere at arbejde med og få hele projektet delt op i tidsperioder, brugte jeg open-source programmet “Ganttproject”. Herunder er den tidsplan jeg har lavet:</p>
+
+      <div class="image">
+        <div class="image-wrapper">
+          <img src="../computerspil/billeder/gannt-diagram.png" alt="Der burde være et billede her ¯\_(ツ)_/¯">
+        </div>
+      </div>
     </div>
 
   <div class="overordnet-design">
@@ -78,13 +101,41 @@
     <h2>Hvordan kom jeg frem til designet?</h2>
     <p>Designet er blevet udarbejdet gennem flere processer, jeg startede med at generere ideer til designet. Jeg startede med at skrive user stories, så jeg havde en klar ide om hvad der skulle være på hjemmesiden (user stories(LINK)). Herefter begyndte jeg på designet af hjemmesiden, der bruger jeg altid papir og blyant for at lave ‘wireframes’ der giver mig en klarere ide om hvad jeg skal lave når jeg designer hjemmesiden i <a href="https://sketchapp.com/">Sketch</a>. Her er de wireframes jeg lavede:</p>
 
+    <div class="image-slider">
+      <div class="image-slider-wrapper">
+        <p class="current-image-comment">De første wireframes</p>
+        <img class="current-image" src="billeder/error-screenshot.png" alt="Der burde være et billede her ¯\_(ツ)_/¯">
 
+        <div class="navigation">
+          <button class="prev">Tidligere</button>
+          <button class="next">Næste</button>
+        </div>
+      </div>
+    </div>
 
     <p>Nu hvor jeg har en klar ide om hvordan jeg vil have hjemmesiden til at se ud, begynder jeg på at designe siden i <a href="https://sketchapp.com/">Sketch</a>, dette kan se herunder:</p>
 
-    <p>Jeg skrev også selve teksten på hjemmesiden, selvom dette ikke er den visuelle del af designet, er teksten stadig en essentiel del af det overordnet design. Herunder kan du se en pdf version af teksten der ligger inde på mit <a href="http://lutski.github.io/ballon-fort-lling-KomIt/">produkt</a>:</p>
+    <p>Jeg lavede to store versioner på selve designet som ligger her i PDF format:</p>
 
-    <p>PDF DOWNLOADER/VIEWER (LINK)</p>
+    <div class="comment">
+      <p>Design nr. 1 jeg ikke kodede:</p>
+      <a href="downloadables/design-1.pdf">Design 1</a>
+    </div>
+
+    <div class="comment">
+      <p>Design nr. 2 som jeg endte med at kode</p>
+      <a href="downloadables/design-2-final.pdf">Design 2</a>
+    </div>
+
+    <br><br><br>
+
+    <p>Jeg skrev også selve teksten på hjemmesiden, selvom dette ikke er den visuelle del af designet, er teksten stadig en essentiel del af det overordnet design. Herunder kan du se en pdf version af teksten der ligger inde på mit <a href="http://lutski.github.io/ballon-fort-lling-KomIt/">produkt</a>:</p>
+    <br>
+    <p><a href="downloadables/Komitballon-historie.pdf">Ballonhistorie tekst</a></p>
+
+    <h2>Hvorfor valgte jeg dette?</h2>
+    <p>Design nr. 1 var en slags prototype af design nr. 2. Det første design var ikke det bedste, og det manglede mange af de kvaliteter jeg ledte efter, angående mine user stories og krav. Det var derfor jeg lavede design nr. 2, jeg havde nemlig lært fra mine fejl, med hensyn til hvad der skulle gøres bedre (se det tredje billede af min notesbog, her opdaterede jeg designet) og lavede dermed en fuldere/klarere version af, hvad min originale plan var.</p>
+
   </div>
 
 
@@ -106,9 +157,6 @@
     <h3>Planlægning</h3>
     <p>I denne iteration vil jeg fokusere på kravet (LINK): “Hjemmesiden skal være så personlig som muligt”.</p>
 
-    <h3>Kontrol af krav og testprocedurer</h3>
-    <p>…</p>
-
     <h3>Design</h3>
     <p>Der foregik ikke noget design, under denne iteration. Men jeg tænkte over hvordan jeg ville udføre denne opgave i en <span class="coderize">function</span>. Jeg eksperimenterede også med forskellige versioner af hvordan jeg ville havde det til at virke.</p>
 
@@ -126,26 +174,23 @@
     <br>
     <p>Det vil sige at hver gang brugeren skriver noget tekst (Forhåbentligt deres navn) i tekst input feltet, bliver den skrevne tekst automatisk opdateret på siden.</p>
 
-    <h3>Test</h3>
-    <p>…</p>
+    <h3>Vurdering af kravene</h3>
+    <p>Dette opfylder kravene om en mere personlig oplevelse godt, siden at den gør lige præcis det som var meningen med iterationen.</p>
 
     <div class="space-divider"></div>
 
-    <h2>Iteration 2 - <i>Guide brugeren på det rigtige spor</i></h2>
+    <h2>Iteration 2 - <i>Guide brugeren ind på det rigtige spor</i></h2>
     <h3>Hvad er det?</h3>
-    <p>…</p>
+    <p>Under denne iteration vil jeg vise hvordan jeg implementerede en måde der ville guide brugeren på det rigtige spor, hvis personen ikke var med på at de skulle skrive deres navn. Her var ideen at de skulle få en besked der hjalp dem videre i processen.</p>
 
     <h3>Hvorfor er det vigtigt?</h3>
-    <p>…</p>
+    <p>Det er vigtigt for brugeren at skrive, deres navn siden at de ikke kan komme videre i hjemmesiden uden at gøre det. Dette giver en bedre brugeroplevelse, siden at man hjælper dem, hvis de føler at de ikke ved hvad de skal gøre.</p>
 
     <h3>Planlægning</h3>
-    <p>…</p>
-
-    <h3>Kontrol af krav og testprocedurer</h3>
-    <p>…</p>
+    <p>I denne iteration ville jeg fokuserer på to krav(LINK), nemlig at “Hjemmesiden skal være brugervenlig” og at “Hjemmesiden skal være nem at navigere”.</p>
 
     <h3>Design</h3>
-    <p>…</p>
+    <p>Designet af denne besked der skulle guide brugeren, var ikke designet i Sketch(LINK) eller tegnet i en notesbog. Dette gjorde jeg ikke, siden at jeg havde en klar ide om hvad jeg ville lave, og hvordan jeg ville udføre iterationen. Ideen var at hver besked, hvis formål var at guide brugeren skulle være forskellig, ud fra hvor mange gange brugeren havde trykket på knappen, uden at skrive deres navn. Dette ville gøre siden mere interaktiv og det ville føles som om at hjemmesiden “taler” til dig.</p>
 
     <h3>Implementering</h3>
     <p>Det første jeg startede med var at kode/style selve error beskeden udelukkende med HTML og Sass (LINK), for så senere at tilføje den Javascript og jQuery funktionalitet jeg ville have. herunder kan man se HTML’en og derefter kommer den Sass jeg skrev og en oversættelse til CSS:</p>
@@ -282,52 +327,241 @@
   <span class="nx">makeVideoFixed</span><span class="p">();</span>
   <span class="nx">togglePopup</span><span class="p">();</span>
   <span class="nx">makeHistoryTextFixed</span><span class="p">();</span>
+  <span class="nx">dismissMobilePopup</span><span class="p">();</span>
 <span class="p">});</span></code></pre></figure>
 
-    <p>Som man kan se har jeg mange andre funktioner som bliver kaldt, de kan alle ses inde på Github(LINK) eller du kan downloade projekt filerne her(LINK).</p>
+    <p>Som man kan se har jeg mange andre funktioner som bliver kaldt, de kan alle ses inde på <a href="https://github.com/Lutski/ballon-fort-lling-KomIt/blob/gh-pages/javascript/main.js">Github</a> eller du kan downloade projekt filerne her(LINK).</p>
 
 
-    <h3>Test</h3>
-    <p>…</p>
+    <h3>Vurdering af kravene</h3>
+    <p>Dette opfylder kravene om en hjemmesidens brugervenlighed og den nemme navigation.</p>
 
     <div class="space-divider"></div>
 
-    <h2>Iteration 3 - <i>lille titel</i></h2>
+    <h2>Iteration 3 - <i>Notifikation til brugerere på mobil enhed</i></h2>
     <h3>Hvad er det?</h3>
-    <p>…</p>
+    <p>Hvis brugerne er på f.eks. en telefon med en mindre skærm, kommer der en besked til dem, der fortæller dem at hjemmesiden er bedst på større computerskærme. De kan efter at havde læst beskeden klikke ‘OK’.</p>
 
     <h3>Hvorfor er det vigtigt?</h3>
-    <p>…</p>
+    <p>Med denne besked fortæller man brugeren at de sagtens kan få det samme information fra hjemmesiden på en mobil enhed, men hvis de vil havde den fulde oplevelse bør de bruge en større skærm.</p>
 
     <h3>Planlægning</h3>
-    <p>…</p>
-
-    <h3>Kontrol af krav og testprocedurer</h3>
-    <p>…</p>
+    <p>I denne iteration vil jeg igen fokusere på kravet “Hjemmesiden skal være brugervenlig”.</p>
 
     <h3>Design</h3>
-    <p>…</p>
+    <p>Denne implementerings design var ret simpel, og jeg havde en helt klar ide om hvad der skulle være. Derfor kodet jeg den bare “on the fly”.</p>
 
     <h3>Implementering</h3>
-    <p>…</p>
+    <p>jeg startede med at kode det hele i HTML og Sass. Herefter brugte jeg en ‘media query’, som i mit tilfælde beskriver at bredden på hjemmesiden når hen på 769 pixel eller mindre, bliver det vist beskeden vist. Denne media query kan blive set nederst på Sass/CSS kode blokken herunder.</p>
+    <br>
+    <div class="comment no-margin">
+      <p>Her kan man se HTML'en:</p>
+    </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"mobile-message"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hej mobil bruger :)<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hej, denne side er optimeret til og bedst vist på en større skærm. Du får de samme informationer ud af det på en mindre skærm, men oplevelsen er bedst på en computer.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"mobile-message-btn"</span><span class="nt">&gt;</span>OK<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
 
-    <h3>Test</h3>
-    <p>…</p>
+    <div class="comment">
+      <p>Her kan man se Sass'en og CSS'en</p>
+    </div>
+    <div class="sass-css">
+      <div class="buttons">
+        <button class="sass-btn sass-css-btn-is-on">Sass</button>
+        <button class="css-btn">CSS</button>
+      </div>
+      <div class="sass">
+        <figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nn">#mobile-message</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="mh">#e8e8e8</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">9999</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span>
 
-    <!-- <div class="image-wrapper">
-      <img src="../computerspil/billeder/gannt-diagram.png" alt="Der burde være et billede her ¯\_(ツ)_/¯">
-    </div> -->
-    <div class="image">
-      <div class="image-wrapper">
-        <img src="../computerspil/billeder/gannt-diagram.png" alt="Der burde være et billede her ¯\_(ツ)_/¯">
+  <span class="nc">.wrapper</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span>
+    <span class="nl">min-width</span><span class="p">:</span> <span class="m">300px</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">600px</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="nf">translate</span><span class="p">(</span><span class="m">-50%</span><span class="o">,</span> <span class="m">-50%</span><span class="p">)</span>
+
+    <span class="nt">h1</span>
+      <span class="nl">font</span><span class="p">:</span>
+        <span class="nl">size</span><span class="p">:</span> <span class="m">30px</span>
+        <span class="na">weight</span><span class="p">:</span> <span class="m">400</span>
+
+    <span class="nt">p</span>
+      <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.7</span>
+      <span class="nl">font</span><span class="p">:</span>
+        <span class="nl">size</span><span class="p">:</span> <span class="m">16px</span>
+        <span class="na">weight</span><span class="p">:</span> <span class="m">200</span>
+
+    <span class="nt">button</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">80px</span>
+      <span class="nl">margin-top</span><span class="p">:</span> <span class="m">30px</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span>
+      <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span>
+      <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span>
+      <span class="nl">font</span><span class="p">:</span>
+        <span class="nl">size</span><span class="p">:</span> <span class="m">18px</span>
+
+
+<span class="k">@media</span><span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="m">769px</span><span class="p">)</span>
+  <span class="nn">#mobile-message</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span></code></pre></figure>
+      </div>
+      <div class="css is-gone">
+        <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#mobile-message</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#e8e8e8</span><span class="p">;</span>
+  <span class="nl">z-index</span><span class="p">:</span> <span class="m">9999</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#mobile-message</span> <span class="nc">.wrapper</span> <span class="p">{</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">600px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">-50%</span><span class="p">,</span> <span class="m">-50%</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">#mobile-message</span> <span class="nc">.wrapper</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#mobile-message</span> <span class="nc">.wrapper</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.7</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">200</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#mobile-message</span> <span class="nc">.wrapper</span> <span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span><span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">769px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">#mobile-message</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
       </div>
     </div>
 
-    <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+    <p>Efter HTML og Sass kodningen af beskeden, gik jeg ind i mit Javascript dokument og skrev funktionen <span class="coderize">dismissMobilePopup()</span>, som giver brugeren muligheden for at sige 'OK' og lukke notifikationen:</p>
+
+    <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Dismisses the popup when the button is clicked</span>
+<span class="kd">function</span> <span class="nx">dismissMobilePopup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">".mobile-message-btn"</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#mobile-message'</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s1">'display'</span><span class="p">:</span><span class="s1">'none'</span><span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">}</span></code></pre></figure>
+
+    <p>Herefter kaldte jeg funktionen, når hjemmesiden er loadet:</p>
+
+    <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// Functions I call when the page initially loads</span>
+  <span class="nx">disableScrolling</span><span class="p">();</span>
+  <span class="nx">getNameInput</span><span class="p">();</span>
+  <span class="nx">startStory</span><span class="p">();</span>
+  <span class="nx">makeVideoFixed</span><span class="p">();</span>
+  <span class="nx">togglePopup</span><span class="p">();</span>
+  <span class="nx">makeHistoryTextFixed</span><span class="p">();</span>
+  <span class="nx">dismissMobilePopup</span><span class="p">();</span>
+<span class="p">});</span></code></pre></figure>
+
+
+    <h3>Vurdering af kravene</h3>
+    <p>Dette opfylder kravene om en hjemmesidens brugervenlighed, da det informerer brugeren om at, de får en bedre brugeroplevelse på en større skærm.</p>
+
+    <div class="test-af-produkt">
+      <h1>Test af produkt på et rigtigt menneske</h1>
+      <hr class="seperator">
+
+      <p>Jeg har testet min hjemmeside på en af mine klassekammerater, Mathias. Dette gør jeg for at se hvordan en eventuel bruger af produktet, interagerer med det. Under denne process vil jeg også være istand til at vurdere hvor der mangler forbedringer og optimeringer.</p>
+      <br>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/W0ROtjKJXmg" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <div class="resultatopgoerelse">
+      <h1>Resultatopgørelse</h1>
+      <hr class="seperator">
+
+      <h2>Hvad har jeg opnået?</h2>
+      <p>Gennem udviklingen har jeg opnået det mål, jeg satte for mig selv i starten af forløbet. Jeg ville bygge en hjemmeside der skulle lære folk om ballonens historie, på en anderledes måde end bare at læse i en bog. Dette mål synes jeg selv at jeg har opnået, selvom der stadig kunne udvikles og forbedres på det.</p>
+
+      <h2>Evaluerende tanker - refleksion</h2>
+      <h3>Hvordan gik det?</h3>
+      <p>Hele processen gik forholdsvist godt, eftersom jeg kendte alle de teknologier/sprog osv. jeg arbejdede med. Der var selvfølgelig nogle bump her og der, som jeg fik klaret uden de helt store problemer, og de bump jeg oplevede, fik jeg lært en helt masse af.</p>
+
+      <h3>Hvad har jeg lært?</h3>
+      <p>Jeg har lært at bruge helt række nye teknikker/metoder både teknisk og designmæssigt. Disse nylærte metoder vil kunne benyttes i fremtiden på andre projekter, både inden -og udenfor skolen. Ud over tekniske og designmæssige færdigheder har jeg også lært en del, ‘project management’ (projektstyring). Eftersom jeg var alene i projektet, blev jeg nødt til at gøre det hele selv. Derfor var det essentielt at jeg vidste hvad jeg skulle gøre, og hvornår jeg skulle gøre det.</p>
+
+      <h3>Hvad var sværest i processen?</h3>
+      <p>Den sværeste del under dette forløb har været selve projektstyringen. Som jeg beskrev i sidste sektion, er jeg alene i projektet og blev derfor nødt til at gøre det hele selv. Dette kunne være en smule svært nogle gange, men jeg har lært en hel masse af det.</p>
+    </div>
+
+
+    <div class="konklusion">
+      <h1>Konklusion</h1>
+      <hr class="seperator">
+      <p>I problemstillingen skrev jeg: “Jeg vil hjælpe mennesker i alle aldre, at lære om ballonens historie samt hvad den bliver brugt til i dag, i et nemt og brugervenligt miljø.”. Selvom produktet ikke er perfekt, synes jeg at problemstillingen er blevet løst. Produktet kunne selvfølgelig godt bruge forbedringer og optimeringer, men det vil der altid være brug for. Derfor konkluderer jeg at problemet er blevet løst ud fra den problemstilling jeg skrev.</p>
+
+      <h2>Hvad kunne forbedres i fremtiden?</h2>
+      <p>Der vil altid kunne forbedres elementer i en hjemmeside. Om det så er mere indhold, bedre kompatibilitet til mobile enheder eller noget helt tredje. Eftersom dette produkt er helt nyt, ville man kunne få feedback fra brugere, og derefter lave forbedringer ud fra kritikken/feedback’en. Et aspekt som jeg med sikkerhed ved skal forbedres er produktets kompatibilitet med mobile enheder.</p>
+
+    </div>
+
+    <div class="kilder">
+      <h1>Kilder/Bilag</h1>
+      <hr class="seperator">
+
+      <h2>Til at skrive teskten i produktet</h2>
+      <ul>
+        <li><a href="http://denstoredanske.dk/Bil,_b%C3%A5d,_fly_m.m./Luftfart/Balloner_og_luftskibe/ballon ">denstoredanske.dk (om ballonen)</a></li>
+        <li><a href="http://www.ballondanmark.dk/index.php/ballonens-historie ">ballondanmark.dk (om ballonens historie)</a></li>
+      </ul>
+
+      <h2>Selve produktets bilag</h2>
+      <ul>
+        <li><a href="http://lutski.github.io/ballon-fort-lling-KomIt/">Produktet (Hjemmesiden)</a></li>
+        <li><a href="https://github.com/Lutski/ballon-fort-lling-KomIt">Github (Se alt koden bag produktet)</a></li>
+        <li><a href="">Download produktets filer (.zip)</a></li>
+      </ul>
+
+      <h2>Bilag til de værktøjer jeg anvender</h2>
+      <ul>
+        <li><a href="http://jekyllrb.com/">Jekyll</a></li>
+        <li><a href="http://sass-lang.com/">Sass (Syntactically Awesome Style Sheets)</a></li>
+        <li><a href="https://jquery.com/">jQuery (Javascript library)</a></li>
+        <li><a href="https://atom.io/">Atom (Code editor)</a></li>
+      </ul>
+    </div>
 
     <div class="space"></div>
   </div>

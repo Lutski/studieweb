@@ -43,16 +43,38 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/sider\/ballon-fortælling\/min\/rapport-min.js": {
-		"fileType": 64,
-		"ignore": 1,
+	"\/sider\/ballon-fortælling\/billeder\/sketch-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/min\/rapport-min.js",
-		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/min\/min\/rapport-min-min.js",
+		"initialSize": 55584,
+		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-1.jpg",
+		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
+		},
+	"\/sider\/ballon-fortælling\/billeder\/sketch-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57229,
+		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-2.jpg",
+		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/sider\/ballon-fortælling\/billeder\/sketch-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54794,
+		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-3.jpg",
+		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/billeder\/sketch-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/sider\/ballon-fortælling\/rapport-style.css": {
 		"fileType": 16,
@@ -90,8 +112,8 @@
 		},
 	"\/sider\/ballon-fortælling\/rapport.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/sider\/ballon-fortælling\/rapport.js",
 		"outputAbbreviatedPath": "\/sider\/ballon-fortælling\/min\/rapport-min.js",
 		"outputPathIsOutsideProject": 0,

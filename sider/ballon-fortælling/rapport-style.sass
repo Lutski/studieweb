@@ -31,7 +31,7 @@ body
   transform: translate(-50%)
 
   .space
-    height: 1000px
+    height: 200px
 
   h1
     text-align: center
@@ -60,6 +60,36 @@ body
 
   .stringerize
     color: #98C379
+
+  .video
+    position: relative
+    padding-bottom: 56.25% /* 16:9 */
+    padding-top: 25px
+    height: 0
+
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+  .image-slider
+    margin: 50px 0
+
+    .image-slider-wrapper
+      text-align: center
+
+      .current-image-comment
+        color: #8b8687
+        margin-bottom: 10px
+        font:
+          size: 16px
+          weight: 200
+
+      .current-image
+        width: 100%
+        height: auto
 
 
   h2
@@ -140,11 +170,11 @@ body
         height: auto
 
 
-
 @media(max-width: 1025px)
   #main
-    .image-wrapper
-      width: 100%
+    .image
+      .image-wrapper
+        width: 100vw
 
 @media(max-width: 769px)
   #main
